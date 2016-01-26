@@ -8,7 +8,9 @@
     <header class="main-header">
       <div class="container">
         <div class="main-logo">
-          <img src="http://placehold.it/150x100" alt="Студия Nerds">
+          <a href="./index.html">
+            <img src="http://placehold.it/150x100" alt="Студия Nerds">
+          </a>
         </div>
         <nav class="main-navigatoin">
           <ul>
@@ -30,103 +32,152 @@
           <a href="#">Корзина</a>
         </div>
       </div>
-      <div class="catalog-header">
-        <h1>
+      <div class="catalog">
+        <span class="catalog-header">
           Добро пожаловать в магазин<br>
           готовых макетов
-        </h1>
+        </span>
       </div>
     </header>
-    <main class="container">
-      <div class="menu">
-        <section class="cost">
-          <p>Стоимость:</p>
-          <!-- Здесь будет слайдер -->
-        </section>
-        <form class="features-select" action="https://echo.htmlacademy.ru" method="post">
-          <b>Сетка:</b>
-          <input id="adaptive" type="radio" name="type" value="adaptive" checked>
-          <label for="adaptive">Адаптивная</label>
-          <input id="fixed" type="radio" name="type" value="fixed">
-          <label for="fixed">Фиксированная</label>
-          <input id="rubber" type="radio" name="type" value="rubber">
-          <label for="rubber">Резиновая</label>
-          <b>Особенности:</b>
-          <input id="slider" type="checkbox" name="features" value="slider" checked>
-          <label for="slider">Слайдер</label>
-          <input id="features" type="checkbox" name="features" value="features">
-          <label for="features">Блок преимуществ</label>
-          <input id="news" type="checkbox" name="features" value="news" checked>
-          <label for="news">Новости</label>
-          <input id="gallery" type="checkbox" name="features" value="gallery">
-          <label for="gallery">Галерея</label>
-          <input id="cart" type="checkbox" name="features" value="cart">
-          <label for="cart">Корзина</label>
-          <button class="btn" type="submit">Показать</button>
-        </form>
-      </div>
-      <div class="sort">
-        <span>Сортировать:</span>
-        <button class="btn">По цене</button>
-        <button class="btn">По типу</button>
-        <button class="btn">По функционалу</button>
-        <button class="btn"></button>
-        <button class="btn"></button>
-      </div>
-      <div class="catalog">
-        <section class="catalog-item">
-          <img src="http://placehold.it/150x100" alt="Картинка"/>
-        </section>
-        <section class="catalog-item">
-          <img src="http://placehold.it/150x100" alt="Картинка"/>
-        </section>
-        <section class="catalog-item">
-          <img src="http://placehold.it/150x100" alt="Картинка"/>
-        </section>
-        <section class="catalog-item">
-          <img src="http://placehold.it/150x100" alt="Картинка"/>
-        </section>
-        <section class="catalog-item">
-          <img src="http://placehold.it/150x100" alt="Картинка"/>
-        </section>
-        <section class="catalog-item">
-          <img src="http://placehold.it/150x100" alt="Картинка"/>
-        </section>
-      </div>
-      <div class="pages">
-        <a href="#">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">Следующая</a>
+    <main class="main.content">
+      <div class="container">
+        <div class="menu">
+          <form class="features-select" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset class="features-select-cost">
+              <legend>Стоимость:</legend>
+              <!-- Здесь будет слайдер -->
+            </fieldset>
+            <fieldset class="features-select-1">
+              <legend>Сетка:</legend>
+              <div class="features-item">
+                <input id="adaptive" type="radio" name="type" value="adaptive" checked>
+                <label for="adaptive">Адаптивная</label>
+              </div>
+              <div class="features-item">
+                <input id="fixed" type="radio" name="type" value="fixed">
+                <label for="fixed">Фиксированная</label>
+              </div>
+              <div class="features-item">
+                <input id="rubber" type="radio" name="type" value="rubber">
+                <label for="rubber">Резиновая</label>
+              </div>
+            </fieldset>
+            <fieldset class="features-select-2">
+              <legend>Особенности:</legend>
+              <div class="features-item">
+                <input id="slider" type="checkbox" name="features" value="slider" checked>
+                <label for="slider">Слайдер</label>
+              </div>
+              <div class="features-item">
+                <input id="features" type="checkbox" name="features" value="features">
+                <label for="features">Блок преимуществ</label>
+              </div>
+              <div class="features-item">
+                <input id="news" type="checkbox" name="features" value="news" checked>
+                <label for="news">Новости</label>
+              </div>
+              <div class="features-item">
+                <input id="gallery" type="checkbox" name="features" value="gallery">
+                <label for="gallery">Галерея</label>
+              </div>
+              <div class="features-item">
+                <input id="cart" type="checkbox" name="features" value="cart">
+                <label for="cart">Корзина</label>
+              </div>
+            </fieldset>
+            <button class="form-btn" type="submit">Показать</button>
+          </form>
+        </div>
+        <div class="porfolio">
+          <div class="sort">
+            <div class="sort-list-1">
+              <ul>
+                <li>
+                  <span>Сортировать:</span>
+                </li>
+                <li>
+                  <a href="#" class="btn">По цене</a>
+                </li>
+                <li>
+                  <a href="#" class="btn">По типу</a>
+                </li>
+                <li>
+                  <a href="#" class="btn">По функционалу</a>
+                </li>
+              </ul>
+            </div>
+            <div class="sort-list-2">
+              <ul>
+                <li>
+                  <a href="#" class="btn"></a>
+                </li>
+                <li>
+                  <a href="#" class="btn"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="catalog">
+            <article class="catalog-item">
+              <img src="http://placehold.it/150x100" alt="Картинка"/>
+            </article>
+            <article class="catalog-item">
+              <img src="http://placehold.it/150x100" alt="Картинка"/>
+            </article>
+            <article class="catalog-item">
+              <img src="http://placehold.it/150x100" alt="Картинка"/>
+            </article>
+            <article class="catalog-item">
+              <img src="http://placehold.it/150x100" alt="Картинка"/>
+            </article>
+            <article class="catalog-item">
+              <img src="http://placehold.it/150x100" alt="Картинка"/>
+            </article>
+            <article class="catalog-item">
+              <img src="http://placehold.it/150x100" alt="Картинка"/>
+            </article>
+          </div>
+          <div class="pages">
+            <a class="active" href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">Следующая</a>
+          </div>
+        </div>
       </div>
     </main>
+    <div class="map">
+      <!-- Не знаю как правильно вставить карту. Пока разметил как ссылку -->
+    </div>
     <footer class="main-footer">
-      <div class="map">
-        <!-- Не знаю как правильно вставить карту. Пока разметил как ссылку -->
-        <a href="#">Карта</a>
-        <section class="map-contacts">
-          <b>Nerds Design Studio</b>
-          <p>
+      <div class="container">
+        <div class="map-contacts">
+          <b class="map-header">Nerds Design Studio</b>
+          <p class="map-adress">
             191186, Санкт-Петербург,<br>
             ул. Б. Конюшенная, д. 19/8
           </p>
-          <p>тел. +7 (812) 275-75-75</p>
+          <p class="map-tel">тел. +7 (812) 275-75-75</p>
           <a href="#" class="btn">Напишите нам</a>
-        </section>
-        <div class="map-logo">
-          <img src="http://placehold.it/150x100" alt="Логотип">
         </div>
       </div>
+      <div class="map-logo">
+        <img src="http://placehold.it/150x100" alt="Логотип">
+      </div>
       <div class="container">
-        <section class="footer-social">
+        <div class="footer-social">
           <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
           <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-          <p>
-            <b>Давайте дружить, это выгодно!</b><br>
-            Скидка 10% для друзей из социальных сетей.
-          </p>
-        </section>
+        </div>
+        <div class="social-discont">
+          <div class="social-discont-1">
+            <p>Давайте дружить, это выгодно!</p>
+          </div>
+          <div class="social-discont-2">
+            <p>Скидка 10% для друзей из социальных сетей.</p>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
