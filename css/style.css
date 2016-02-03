@@ -13,3 +13,92 @@ h2 {
   font-weight: normal;
   font-family: "Roboto Medium";
 }
+
+.main-header {
+  margin-bottom: 80px;
+}
+
+.container {
+  width: 880px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.features {
+  width: 880px;
+  margin-bottom: 90px;
+}
+
+.features-item-1 {
+  float: left;
+  margin-right: 80px;
+}
+
+.features-item-2 {
+  float: left;
+  margin-right: 80px;
+}
+
+.features-item-3 {
+  float: left;
+}
+
+.about {
+  margin-bottom: 120px;
+}
+
+.about-left {
+  float: left;
+}
+
+.about-right {
+  float: right;
+}
+
+.portfolio-1 {
+  float: left;
+  width: 210px;
+  display: inline-block;
+  margin-right: 110px;
+  vertical-align: middle;
+}
+
+.portfolio-2 {
+  float: left;
+  width: 210px;
+  display: inline-block;
+  margin-right: 110px;
+  vertical-align: middle;
+}
+
+.portfolio-3 {
+  float: right;
+  width: 210px;
+  display: inline-block;
+  margin-right: 0px;
+  vertical-align: middle;
+}
+
+.clearfix:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+main {
+  margin-bottom: 90px;
+}
+
+.map-contacts {
+  float: left;
+}
+
+.map-logo {
+  float: right;
+}
+
+.map {
+  margin-bottom: 80px;
+}
+
+.foo
