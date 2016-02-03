@@ -101,4 +101,6 @@ main {
   margin-bottom: 80px;
 }
 
-.foo
+.discont {
+  float: right;
+}
