@@ -93,14 +93,68 @@ main {
   float: left;
 }
 
-.map-logo {
-  float: right;
-}
-
 .map {
   margin-bottom: 80px;
 }
 
 .discont {
   float: right;
+}
+
+.footer-social {
+  float: left;
+}
+
+.main-logo {
+  float: left;
+  width: 200px;
+  margin-right: 190px;
+}
+
+.main-navigatoin {
+  float: left;
+  width: 350px;
+}
+
+.links li {
+  float: left;
+  padding-right: 5px;
+  list-style: none;
+}
+
+.cart {
+  float: right;
+  width: 100px;
+  padding-top: 20px;
+}
+
+.catalog {
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+span {
+
+}
+
+.menu {
+  float: left;
+  width: 260px;
+  height: 830px;
+  margin-right: 50px;
+}
+
+.catalog-item {
+  float: left;
+  width: 265px;
+}
+
+.pages {
+  float: left;
+  margin-left: 330px;
+}
+
+.sort {
+  padding-bottom: 50px;
 }

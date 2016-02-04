@@ -3,17 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
+      <div class="container clearfix">
         <div class="main-logo">
           <a href="index.html">
             <img src="img/main-logo.png" width="139" height="56" alt="Студия Nerds">
           </a>
         </div>
         <nav class="main-navigatoin">
-          <ul>
+          <ul class="links">
             <li>
               <a href="#">Студия</a>
             </li>
@@ -33,14 +34,13 @@
         </div>
       </div>
       <div class="catalog">
-        <span class="catalog-header">
-          Добро пожаловать в магазин<br>
-          готовых макетов
-        </span>
+        <p class="catalog-header">
+          Добро пожаловать в магазин готовых макетов
+        </p>
       </div>
     </header>
     <main class="main.content">
-      <div class="container">
+      <div class="container clearfix">
         <div class="menu">
           <form class="features-select" action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="features-select-cost">
@@ -91,7 +91,7 @@
         <div class="porfolio">
           <div class="sort">
             <div class="sort-list-1">
-              <ul>
+              <ul class="links">
                 <li>
                   <span>Сортировать:</span>
                 </li>
@@ -107,17 +107,16 @@
               </ul>
             </div>
             <div class="sort-list-2">
-              <ul>
+              <ul class="links">
                 <li>
-                  <a href="#" class="btn"></a>
+                  <a href="#" class="btn">111</a>
                 </li>
                 <li>
-                  <a href="#" class="btn"></a>
+                  <a href="#" class="btn">111</a>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="catalog">
             <article class="catalog-item">
               <img src="img/aviator.jpg" width="240" height="270" alt="Aviator">
             </article>
@@ -142,7 +141,6 @@
               <a href="#">3</a>
               <a href="#">Следующая</a>
             </div>
-          </div>
         </div>
       </div>
     </main>
@@ -150,33 +148,33 @@
       <!-- Не знаю как правильно вставить карту. Пока разметил как ссылку -->
     </div>
     <footer class="main-footer">
-      <div class="container">
-        <div class="map-contacts">
-          <b class="map-header">Nerds Design Studio</b>
-          <p class="map-adress">
-            191186, Санкт-Петербург,<br>
-            ул. Б. Конюшенная, д. 19/8
-          </p>
-          <p class="map-tel">тел. +7 (812) 275-75-75</p>
-          <a href="#" class="btn">Напишите нам</a>
+      <div class="map">
+        <!-- Не знаю как правильно вставить карту. Пока разметил как ссылку -->
+
+        <div class="container clearfix">
+          <section class="map-contacts">
+            <b>Nerds Design Studio</b>
+            <p>
+              191186, Санкт-Петербург,<br>
+              ул. Б. Конюшенная, д. 19/8
+            </p>
+            <p>тел. +7 (812) 275-75-75</p>
+            <a href="#" class="btn">Напишите нам</a>
+          </section>
+
         </div>
       </div>
-      <div class="map-logo">
-        <img src="img/map-marker.png" width="231" height="190" alt="Маркер">
-      </div>
-      <div class="container">
+      <div class="container clearfix">
         <div class="footer-social">
           <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
           <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
         </div>
-        <div class="social-discont">
-          <div class="social-discont-1">
-            <p>Давайте дружить, это выгодно!</p>
-          </div>
-          <div class="social-discont-2">
-            <p>Скидка 10% для друзей из социальных сетей.</p>
-          </div>
+        <div class="discont">
+          <p>
+            <b>Давайте дружить, это выгодно!</b><br>
+            Скидка 10% для друзей из социальных сетей.
+          </p>
         </div>
       </div>
     </footer>
