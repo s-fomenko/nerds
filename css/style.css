@@ -3,7 +3,6 @@ body {
   line-height: 22px;
   color: #283136;
   font-weight: normal;
-  font-family: "Roboto Medium";
 }
 
 h2 {
@@ -29,18 +28,10 @@ h2 {
   margin-bottom: 90px;
 }
 
-.features-item-1 {
+.features-item {
   float: left;
   margin-right: 80px;
-}
-
-.features-item-2 {
-  float: left;
-  margin-right: 80px;
-}
-
-.features-item-3 {
-  float: left;
+  width: 200px;
 }
 
 .about {
@@ -49,34 +40,27 @@ h2 {
 
 .about-left {
   float: left;
+  width: 585px;
 }
 
 .about-right {
   float: right;
+  width: 250px;
 }
 
-.portfolio-1 {
+.portfolio {
+  width: 570px;
+}
+
+.portfolio-item {
   float: left;
-  width: 210px;
-  display: inline-block;
-  margin-right: 110px;
+  width: 190px;
+  margin-right: 130px;
   vertical-align: middle;
 }
 
-.portfolio-2 {
-  float: left;
-  width: 210px;
-  display: inline-block;
-  margin-right: 110px;
-  vertical-align: middle;
-}
-
-.portfolio-3 {
-  float: right;
-  width: 210px;
-  display: inline-block;
+.portfolio-item:nth-child(3) {
   margin-right: 0px;
-  vertical-align: middle;
 }
 
 .clearfix:after {
@@ -85,24 +69,23 @@ h2 {
   display: block;
 }
 
-main {
-  margin-bottom: 90px;
-}
-
 .map-contacts {
   float: left;
+  width: 250px;
 }
 
 .map {
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 
 .discont {
   float: right;
+  width: 250px;
 }
 
 .footer-social {
   float: left;
+  width: 270px;
 }
 
 .main-logo {
@@ -120,6 +103,7 @@ main {
   float: left;
   padding-right: 5px;
   list-style: none;
+
 }
 
 .cart {
@@ -134,15 +118,11 @@ main {
   margin-right: auto;
 }
 
-span {
-
-}
-
 .menu {
   float: left;
   width: 260px;
   height: 830px;
-  margin-right: 50px;
+  margin-right: 90px;
 }
 
 .catalog-item {
@@ -153,6 +133,7 @@ span {
 .pages {
   float: left;
   margin-left: 330px;
+  width: 330px;
 }
 
 .sort {
