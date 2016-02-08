@@ -24,13 +24,16 @@ h2 {
 
 .main-header {
   height: 407px;
+  background: violet;
+  opacity: 0.5;
   /*Временно*/
   padding-top: 29px;
-
-
 }
 
 .container {
+  background: green;
+  opacity: 0.5;
+  /*Временно*/
   width: 880px;
   padding-left: 10px;
   padding-right: 10px;
@@ -124,7 +127,7 @@ h2 {
 
 .map-contacts {
   min-height: 240px;
-  background: green;
+  background: black;
   opacity: 0.9;
   /*Временно*/
   width: 250px;
@@ -134,7 +137,7 @@ h2 {
 
 .footer-social {
   min-height: 216px;
-  background: green;
+  background: violet;
   opacity: 0.7;
   /*Временно*/
   width: 300px;
@@ -143,15 +146,110 @@ h2 {
 
 .discont {
   min-height: 216px;
-  background: green;
+  background: blue;
   opacity: 0.7;
   /*Временно*/
   width: 560px;
   float: right;
 }
 
+/*catalog.html*/
 
-/*
+.catalog-header {
+  height: 299px;
+  background: violet;
+  opacity: 0.5;
+  /*Временно*/
+  padding-top: 29px;
+}
+
+.catalog {
+  margin-top: 65px;
+}
+
+.catalog-description {
+  background: red;
+  min-height: 100px;
+  /*Временно*/
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu {
+  min-height: 750px;
+  background: red;
+  opacity: 0.5;
+  /*Временно*/
+  width: 240px;
+  float: left;
+  margin-right: 80px;
+}
+
+.shop {
+  min-height: 1125px;
+  background: violet;
+  /*Временно*/
+  width: 560px;
+  float: left;
+}
+
+.sort-list-1 {
+  background: blue;
+  opacity: 0.5;
+  /*Временно*/
+  width: 460px;
+  float: left;
+}
+
+.sort-list-2 {
+  background: blue;
+  opacity: 0.5;
+  /*Временно*/
+  width: 80px;
+  float: right;;
+}
+
+.catalog-item {
+  width: 240px;
+  float: left;
+  margin-right: 80px;
+  margin-bottom: 110px;
+}
+
+.catalog-item:nth-child(2n) {
+  margin-right: 0px;
+}
+
+.catalog-item:nth-child(7) {
+  margin-bottom: 0px;
+}
+
+.catalog-item:nth-child(8) {
+  margin-bottom: 0px;
+}
+
+.pages  {
+  background: blue;
+  opacity: 0.5;
+  /*Временно*/
+  width: 300px;
+  float: left;
+  margin-top: 80px;
+}
+
+.catalog-main {
+  margin-bottom: 83px;
+}
+
+main {
+  background: black;
+  /*Временно*/
+}
+
+
+/* СТАРЫЙ ВАРИАНТ
+
 .main-header {
   margin-bottom: 80px;
 }
