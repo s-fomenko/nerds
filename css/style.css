@@ -1,5 +1,5 @@
 body {
-  background: url("../img/nerds-index.jpg") no-repeat 50% 10px;
+  /*background: url("../img/nerds-index.jpg") no-repeat 50% 10px;*/
   background-size: 1200px auto;
   /*Временно*/
   font-size: 16px;
@@ -34,7 +34,6 @@ h2 {
   width: 880px;
   padding-left: 10px;
   padding-right: 10px;
-  /*padding-top: 22px;*/
   margin-left: auto;
   margin-right: auto;
 }
@@ -108,7 +107,6 @@ h2 {
 }
 
 .portfolio-item {
-  width: 220px;
   float: left;
   margin-right: 110px;
 }
