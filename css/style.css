@@ -1,5 +1,6 @@
 body {
-  /*background: url("../img/nerds-index.jpg") no-repeat 50% 10px;*/
+  /*background: url("../img/nerds-catalog.jpg") no-repeat 50% 10px;*/
+  /*opacity: 0.9;*/
   background-size: 1200px auto;
   /*Временно*/
   font-size: 16px;
@@ -48,12 +49,12 @@ h2 {
   margin-right: 180px;
 }
 
-.main-navigatoin {
+.main-navigation {
   width: 400px;
   float: left;
 }
 
-.links li {
+.main-navigation-list li {
   display: inline;
   width: 400px;
 }
@@ -64,11 +65,12 @@ h2 {
 }
 
 .features {
-  min-height: 379px;
+  /*min-height: 379px;*/
   background: red;
-  opacity: 0.4;
+  opacity: 0.7;
   /*Временно*/
   padding-top: 82px;
+  padding-bottom: 110px;
 }
 
 .features-item {
@@ -82,11 +84,12 @@ h2 {
 }
 
 .about {
-  min-height: 415px;
+  /*min-height: 415px;*/
   background: violet;
   opacity: 0.4;
   /*Временно*/
   padding-top: 60px;
+  padding-bottom: 150px;
 }
 
 .about-left {
@@ -101,12 +104,12 @@ h2 {
 }
 
 .portfolio {
-  min-height: 112px;
+  /*min-height: 112px;*/
   background: red;
   opacity: 0.4;
   /*Временно*/
   padding-top: 58px;
-  margin-bottom: 85px;
+  padding-bottom: 20px;
 }
 
 .portfolio-item {
@@ -118,85 +121,106 @@ h2 {
   margin-right: 0px;
 }
 
-.map {
-  min-height: 417px;
-  background: violet;
-  opacity: 0.4;
+.main-footer {
+  /*background: black;*/
   /*Временно*/
 }
 
+.map {
+  min-height: 330px;
+  background: violet;
+  opacity: 0.4;
+  /*Временно*/
+  padding-top: 170px;
+}
+
 .map-contacts {
-  min-height: 240px;
+  /*min-height: 240px;*/
   background: black;
   opacity: 0.9;
   /*Временно*/
   width: 250px;
   float: left;
-  margin-top: 87px;
+
 }
 
 .footer-social {
-  min-height: 216px;
+  /*min-height: 216px;*/
   background: violet;
   opacity: 0.7;
   /*Временно*/
   width: 300px;
   float: left;
+  padding-top: 77px;
+  padding-bottom: 77px;
 }
 
 .discont {
-  min-height: 216px;
+  /*min-height: 216px;*/
   background: blue;
   opacity: 0.7;
   /*Временно*/
   width: 560px;
   float: right;
+  padding-top: 77px;
+  padding-bottom: 77px;
 }
 
 /*catalog.html*/
 
 .catalog-header {
-  height: 299px;
+  /*height: 299px;*/
   background: violet;
   opacity: 0.5;
   /*Временно*/
-  padding-top: 29px;
+  padding-top: 30px;
 }
 
 .catalog {
-  margin-top: 65px;
+  /*background: red;*/
+  margin-top: 5px;
 }
 
-.catalog-description {
-  background: red;
-  min-height: 100px;
+.description-header {
+  /*background: red;*/
+  /*min-height: 100px;*/
   /*Временно*/
   width: 700px;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 210px;
+  text-align: center;
 }
 
 .menu {
-  min-height: 750px;
+  /*min-height: 750px;*/
   background: red;
   opacity: 0.5;
   /*Временно*/
   width: 240px;
   float: left;
   margin-right: 80px;
+  padding-top: 60px;
 }
 
 .shop {
-  min-height: 1125px;
+  /*min-height: 1125px;*/
   background: violet;
   /*Временно*/
   width: 560px;
   float: left;
+
+}
+
+.sort {
+  background: yellow;
+  margin-bottom: 89px;
+  padding-top: 40px;
 }
 
 .sort-list-1 {
   background: blue;
-  opacity: 0.5;
+  opacity: 0.9;
   /*Временно*/
   width: 460px;
   float: left;
@@ -204,7 +228,7 @@ h2 {
 
 .sort-list-2 {
   background: blue;
-  opacity: 0.5;
+  opacity: 0.9;
   /*Временно*/
   width: 80px;
   float: right;;
@@ -214,18 +238,19 @@ h2 {
   width: 240px;
   float: left;
   margin-right: 80px;
-  margin-bottom: 110px;
+  margin-bottom: 103px;
+
 }
 
 .catalog-item:nth-child(2n) {
   margin-right: 0px;
 }
 
-.catalog-item:nth-child(7) {
+.catalog-item:nth-child(5) {
   margin-bottom: 0px;
 }
 
-.catalog-item:nth-child(8) {
+.catalog-item:nth-child(6) {
   margin-bottom: 0px;
 }
 
@@ -236,14 +261,12 @@ h2 {
   width: 300px;
   float: left;
   margin-top: 80px;
-}
 
-.catalog-main {
-  margin-bottom: 83px;
 }
 
 main {
   background: black;
+  opacity: 0.5;
   /*Временно*/
 }
 
@@ -331,12 +354,12 @@ main {
   margin-right: 190px;
 }
 
-.main-navigatoin {
+.main-navigation {
   float: left;
   width: 350px;
 }
 
-.links li {
+.main-navigation-list li {
   float: left;
   padding-right: 5px;
   list-style: none;
