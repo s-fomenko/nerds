@@ -4,7 +4,7 @@ body {
   background-size: 1200px auto;
   /*Временно*/
   font-size: 16px;
-  line-height: 22px;
+  /*line-height: 22px;*/
   color: #283136;
   font-weight: normal;
 }
@@ -24,11 +24,16 @@ h2 {
 }
 
 .main-header {
-  height: 407px;
+  /*height: 407px;*/
   background: violet;
   opacity: 0.5;
   /*Временно*/
+
+}
+
+.header-block {
   padding-top: 29px;
+  padding-bottom: 40px;
 }
 
 .container {
@@ -144,26 +149,32 @@ h2 {
 
 }
 
-.footer-social {
-  /*min-height: 216px;*/
-  background: violet;
-  opacity: 0.7;
-  /*Временно*/
-  width: 300px;
-  float: left;
+.footer-about {
+  /*background: blue;*/
   padding-top: 77px;
   padding-bottom: 77px;
 }
 
+.footer-social {
+  /*min-height: 216px;*/
+  /*background: violet;*/
+  /*opacity: 0.7;*/
+  /*Временно*/
+  width: 300px;
+  float: left;
+  /*padding-top: 77px;*/
+  /*padding-bottom: 77px;*/
+}
+
 .discont {
   /*min-height: 216px;*/
-  background: blue;
-  opacity: 0.7;
+  /*background: blue;*/
+  /*opacity: 0.7;*/
   /*Временно*/
   width: 560px;
   float: right;
-  padding-top: 77px;
-  padding-bottom: 77px;
+  /*padding-top: 77px;*/
+  /*padding-bottom: 77px;*/
 }
 
 /*catalog.html*/
@@ -178,7 +189,7 @@ h2 {
 
 .catalog {
   /*background: red;*/
-  margin-top: 5px;
+  /*margin-top: 5px;*/
 }
 
 .description-header {
@@ -188,34 +199,43 @@ h2 {
   width: 700px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 210px;
+  padding-top: 15px;
+  padding-bottom: 90px;
   text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.choose {
+  background: red;
+  padding-top: 45px;
 }
 
 .menu {
   /*min-height: 750px;*/
-  background: red;
-  opacity: 0.5;
+  /*background: red;*/
+  /*opacity: 0.5;*/
   /*Временно*/
   width: 240px;
   float: left;
   margin-right: 80px;
-  padding-top: 60px;
+  /*padding-top: 80px;*/
 }
 
 .shop {
   /*min-height: 1125px;*/
-  background: violet;
+  /*background: violet;*/
   /*Временно*/
   width: 560px;
   float: left;
+  /*padding-top: 80px;*/
 
 }
 
 .sort {
   background: yellow;
   margin-bottom: 89px;
-  padding-top: 40px;
+  /*padding-top: 80px;*/
 }
 
 .sort-list-1 {
@@ -265,8 +285,8 @@ h2 {
 }
 
 main {
-  background: black;
-  opacity: 0.5;
+  /*background: black;*/
+  /*opacity: 0.5;*/
   /*Временно*/
 }
 
