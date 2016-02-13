@@ -7,12 +7,12 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
+      <div class="container clearfix">
         <div class="main-logo">
           <img src="img/main-logo.png" width="139" height="56" alt="Студия Nerds">
         </div>
-        <nav class="main-navigatoin">
-          <ul>
+        <nav class="main-navigation">
+          <ul class="main-navigation-list">
             <li>
               <a href="#">Студия</a>
             </li>
@@ -30,6 +30,8 @@
         <div class="cart">
           <a href="#">Корзина</a>
         </div>
+      </div>
+      <!--<div class="container">
         <section class="slider">
           <b>
             Долго, дорого,<br>
@@ -39,18 +41,18 @@
             Математически выверенный дизайн<br>
             для вашего сайта или мобильного приложения
           </p>
-          <img src="img/slider-1.png" width="338" height="231" alt="Промо-картинка">
           <a href="#" class="btn">Узнать больше</a>
+          <img src="img/slider-1.png" width="338" height="231" alt="Промо-картинка">
         </section>
-      </div>
+      </div>-->
     </header>
-    <main class="container">
-      <section class="features">
+    <main class="index-main">
+      <section class="features container clearfix">
         <div class="features-item">
           <img src="img/websites.png" width="240" height="124" alt="Веб-сайты" class="features-logo">
           <h2 class="features-name">Веб-сайты</h2>
           <p>
-            Мир никогда не будет прежним,<br>
+            Мир никогда не будет прежним,
             после того как увидит ваш сайт!
           </p>
           <a href="#" class="btn btn-red">Заказать</a>
@@ -59,27 +61,28 @@
           <img src="img/apps.png" width="240" height="124" alt="Приложения" class="features-logo">
           <h2 class="features-name">Приложения</h2>
           <p>
-            Покорите топ-10 приложений<br>
+            Покорите топ-10 приложений
             в AppStore и Google Play
           </p>
           <a href="#" class="btn btn-green">Заказать</a>
         </div>
         <div class="features-item">
-          <img src="img/apps.png" width="240" height="124" alt="Презентации" class="features-logo">
+          <img src="img/presentations.png" width="240" height="124" alt="Презентации" class="features-logo">
           <h2 class="features-name">Презентации</h2>
           <p>
-            Вы даже не подозреваете,<br>
+            Вы даже не подозреваете,
             насколько вы изумительны!
           </p>
           <a href="#" class="btn btn-yellow">Заказать</a>
         </div>
       </section>
-      <section class="about">
+      <!--<div class="container">-->
+      <section class="about container clearfix">
         <div class="about-left">
-          <h2>
-            Мы-маленькая, но гордая<br>
+          <h1 class="studio">
+            Мы-маленькая, но гордая
             дизайн-студия из Краснодара.
-          </h2>
+          </h1>
           <p>
             Исповедуем принципы минимализма и чистоты. Ставим математический<br>
             расчет выше креатива. Работаем не покладая рук, как роботы.
@@ -103,45 +106,44 @@
           </ul>
         </div>
       </section>
-      <div class="portfolio">
-        <a href="#" class="portfolio-1">
+      <div class="portfolio container clearfix">
+        <a href="#" class="portfolio-item">
           <img src="img/glukhanko.png" width="198" height="37" alt="Glukhanko">
         </a>
-        <a href="#" class="portfolio-2">
+        <a href="#" class="portfolio-item">
           <img src="img/html-academy.png" width="199" height="68" alt="HTML Academy">
         </a>
-        <a href="#" class="portfolio-3">
+        <a href="#" class="portfolio-item">
           <img src="img/borodinski.png" width="209" height="86" alt="Barbershop Borodinski">
         </a>
       </div>
+      <!--</div>-->
     </main>
     <footer class="main-footer">
       <div class="map">
         <!-- Не знаю как правильно вставить карту. Пока разметил как ссылку -->
-        <a href="#">Карта</a>
-        <section class="map-contacts">
-          <b>Nerds Design Studio</b>
-          <p>
-            191186, Санкт-Петербург,<br>
-            ул. Б. Конюшенная, д. 19/8
-          </p>
-          <p>тел. +7 (812) 275-75-75</p>
-          <a href="#" class="btn">Напишите нам</a>
-        </section>
-        <div class="map-logo">
-          <img src="img/map-marker.png" width="231" height="190" alt="Маркер">
+        <div class="container clearfix">
+          <section class="map-contacts">
+            <b>Nerds Design Studio</b>
+            <p>
+              191186, Санкт-Петербург,<br>
+              ул. Б. Конюшенная, д. 19/8
+            </p>
+            <p>тел. +7 (812) 275-75-75</p>
+            <a href="#" class="btn">Напишите нам</a>
+          </section>
         </div>
       </div>
-      <div class="container">
-        <section class="footer-social">
+      <div class="container clearfix">
+        <div class="footer-social">
           <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
           <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-          <p>
-            <b>Давайте дружить, это выгодно!</b><br>
-            Скидка 10% для друзей из социальных сетей.
-          </p>
-        </section>
+        </div>
+        <div class="discont">
+            <p>Давайте дружить, это выгодно!</p>
+            <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
       </div>
     </footer>
   </body>

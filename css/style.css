@@ -1,9 +1,12 @@
 body {
+  /*background: url("../img/nerds-catalog.jpg") no-repeat 50% 10px;*/
+  /*opacity: 0.9;*/
+  background-size: 1200px auto;
+  /*Временно*/
   font-size: 16px;
-  line-height: 22px;
+  /*line-height: 22px;*/
   color: #283136;
   font-weight: normal;
-  font-family: "Roboto Medium";
 }
 
 h2 {
@@ -13,3 +16,407 @@ h2 {
   font-weight: normal;
   font-family: "Roboto Medium";
 }
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main-header {
+  /*height: 407px;*/
+  background: violet;
+  opacity: 0.5;
+  /*Временно*/
+
+}
+
+.header-block {
+  padding-top: 29px;
+  padding-bottom: 40px;
+}
+
+.container {
+  background: green;
+  opacity: 0.5;
+  /*Временно*/
+  width: 880px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-logo {
+  width: 139px;
+  height: 56px;
+  float: left;
+  margin-right: 180px;
+}
+
+.main-navigation {
+  width: 400px;
+  float: left;
+}
+
+.main-navigation-list li {
+  display: inline;
+  width: 400px;
+}
+
+.cart {
+  width: 100px;
+  float: right;
+}
+
+.features {
+  /*min-height: 379px;*/
+  background: red;
+  opacity: 0.7;
+  /*Временно*/
+  padding-top: 82px;
+  padding-bottom: 110px;
+}
+
+.features-item {
+  width: 240px;
+  float: left;
+  margin-right: 80px;
+}
+
+.features-item:last-child {
+  margin-right: 0px;
+}
+
+.about {
+  /*min-height: 415px;*/
+  background: violet;
+  opacity: 0.4;
+  /*Временно*/
+  padding-top: 60px;
+  padding-bottom: 150px;
+}
+
+.about-left {
+  width: 620px;
+  float: left;
+  margin-right: 20px;
+}
+
+.about-right {
+  width: 240px;
+  float: left;
+}
+
+.portfolio {
+  /*min-height: 112px;*/
+  background: red;
+  opacity: 0.4;
+  /*Временно*/
+  padding-top: 58px;
+  padding-bottom: 20px;
+}
+
+.portfolio-item {
+  float: left;
+  margin-right: 110px;
+}
+
+.portfolio-item:last-child {
+  margin-right: 0px;
+}
+
+.main-footer {
+  /*background: black;*/
+  /*Временно*/
+}
+
+.map {
+  min-height: 330px;
+  background: violet;
+  opacity: 0.4;
+  /*Временно*/
+  padding-top: 170px;
+}
+
+.map-contacts {
+  /*min-height: 240px;*/
+  background: black;
+  opacity: 0.9;
+  /*Временно*/
+  width: 250px;
+  float: left;
+
+}
+
+.footer-about {
+  /*background: blue;*/
+  padding-top: 77px;
+  padding-bottom: 77px;
+}
+
+.footer-social {
+  /*min-height: 216px;*/
+  /*background: violet;*/
+  /*opacity: 0.7;*/
+  /*Временно*/
+  width: 300px;
+  float: left;
+  /*padding-top: 77px;*/
+  /*padding-bottom: 77px;*/
+}
+
+.discont {
+  /*min-height: 216px;*/
+  /*background: blue;*/
+  /*opacity: 0.7;*/
+  /*Временно*/
+  width: 560px;
+  float: right;
+  /*padding-top: 77px;*/
+  /*padding-bottom: 77px;*/
+}
+
+/*catalog.html*/
+
+.catalog-header {
+  /*height: 299px;*/
+  background: violet;
+  opacity: 0.5;
+  /*Временно*/
+  padding-top: 30px;
+}
+
+.catalog {
+  /*background: red;*/
+  /*margin-top: 5px;*/
+}
+
+.description-header {
+  /*background: red;*/
+  /*min-height: 100px;*/
+  /*Временно*/
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15px;
+  padding-bottom: 90px;
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.choose {
+  background: red;
+  padding-top: 45px;
+}
+
+.menu {
+  /*min-height: 750px;*/
+  /*background: red;*/
+  /*opacity: 0.5;*/
+  /*Временно*/
+  width: 240px;
+  float: left;
+  margin-right: 80px;
+  /*padding-top: 80px;*/
+}
+
+.shop {
+  /*min-height: 1125px;*/
+  /*background: violet;*/
+  /*Временно*/
+  width: 560px;
+  float: left;
+  /*padding-top: 80px;*/
+
+}
+
+.sort {
+  background: yellow;
+  margin-bottom: 89px;
+  /*padding-top: 80px;*/
+}
+
+.sort-list-1 {
+  background: blue;
+  opacity: 0.9;
+  /*Временно*/
+  width: 460px;
+  float: left;
+}
+
+.sort-list-2 {
+  background: blue;
+  opacity: 0.9;
+  /*Временно*/
+  width: 80px;
+  float: right;;
+}
+
+.catalog-item {
+  width: 240px;
+  float: left;
+  margin-right: 80px;
+  margin-bottom: 103px;
+
+}
+
+.catalog-item:nth-child(2n) {
+  margin-right: 0px;
+}
+
+.catalog-item:nth-child(5) {
+  margin-bottom: 0px;
+}
+
+.catalog-item:nth-child(6) {
+  margin-bottom: 0px;
+}
+
+.pages  {
+  background: blue;
+  opacity: 0.5;
+  /*Временно*/
+  width: 300px;
+  float: left;
+  margin-top: 80px;
+
+}
+
+main {
+  /*background: black;*/
+  /*opacity: 0.5;*/
+  /*Временно*/
+}
+
+
+/* СТАРЫЙ ВАРИАНТ
+
+.main-header {
+  margin-bottom: 80px;
+}
+
+.container {
+  width: 880px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.features {
+  width: 880px;
+  margin-bottom: 90px;
+}
+
+.features-item {
+  float: left;
+  margin-right: 80px;
+  width: 200px;
+}
+
+.about {
+  margin-bottom: 120px;
+}
+
+.about-left {
+  float: left;
+  width: 585px;
+}
+
+.about-right {
+  float: right;
+  width: 250px;
+}
+
+.portfolio {
+  width: 570px;
+}
+
+.portfolio-item {
+  float: left;
+  width: 190px;
+  margin-right: 130px;
+  vertical-align: middle;
+}
+
+.portfolio-item:nth-child(3) {
+  margin-right: 0px;
+}
+
+.clearfix:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.map-contacts {
+  float: left;
+  width: 250px;
+}
+
+.map {
+  padding-bottom: 80px;
+}
+
+.discont {
+  float: right;
+  width: 250px;
+}
+
+.footer-social {
+  float: left;
+  width: 270px;
+}
+
+.main-logo {
+  float: left;
+  width: 200px;
+  margin-right: 190px;
+}
+
+.main-navigation {
+  float: left;
+  width: 350px;
+}
+
+.main-navigation-list li {
+  float: left;
+  padding-right: 5px;
+  list-style: none;
+
+}
+
+.cart {
+  float: right;
+  width: 100px;
+  padding-top: 20px;
+}
+
+.catalog {
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu {
+  float: left;
+  width: 260px;
+  height: 830px;
+  margin-right: 90px;
+}
+
+.catalog-item {
+  float: left;
+  width: 265px;
+}
+
+.pages {
+  float: left;
+  margin-left: 330px;
+  width: 330px;
+}
+
+.sort {
+  padding-bottom: 50px;
+}
+*/
