@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:500,400&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -20,7 +22,7 @@
               <a href="#">Клиенты</a>
             </li>
             <li>
-              <a href="#">Магазин</a>
+              <a href="./catalog.html">Магазин</a>
             </li>
             <li>
               <a href="#">Контакты</a>
@@ -31,27 +33,49 @@
           <a href="#">Корзина</a>
         </div>
       </div>
-      <!--<div class="container">
-        <section class="slider">
-          <b>
-            Долго, дорого,<br>
-            скурпулезно
-          </b>
-          <p>
-            Математически выверенный дизайн<br>
-            для вашего сайта или мобильного приложения
-          </p>
-          <a href="#" class="btn">Узнать больше</a>
-          <img src="img/slider-1.png" width="338" height="231" alt="Промо-картинка">
-        </section>
-      </div>-->
+      <div class="container">
+        <div class="slider">
+        <input type="radio" id="btn-1" name="toggle" checked>
+        <input type="radio" id="btn-2" name="toggle">
+        <input type="radio" id="btn-3" name="toggle">
+        <div class="slider-controls">
+          <label for="btn-1"></label>
+          <label for="btn-2"></label>
+          <label for="btn-3"></label>
+        </div>
+        <div class="slides">
+          <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title">Долго, дорого, скрупулезно</div>
+              <p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title">Любите ли вы математику, как любим ее мы?</div>
+              <p>Нашим дизайнерам мы удаляем нейроны, ответственные<br> за креатив, чтобы дать им возможность все просчитать</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title">Только наркотики,<br>только хардкор!</div>
+              <p>Все дизайнерские решения в нашей компании принимаются<br>
+  только под воздействием качественных галлюциногенов</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
     </header>
     <main class="index-main">
       <section class="features container clearfix">
         <div class="features-item">
           <img src="img/websites.png" width="240" height="124" alt="Веб-сайты" class="features-logo">
           <h2 class="features-name">Веб-сайты</h2>
-          <p>
+          <p class="features-paragraph">
             Мир никогда не будет прежним,
             после того как увидит ваш сайт!
           </p>
@@ -60,7 +84,7 @@
         <div class="features-item">
           <img src="img/apps.png" width="240" height="124" alt="Приложения" class="features-logo">
           <h2 class="features-name">Приложения</h2>
-          <p>
+          <p class="features-paragraph">
             Покорите топ-10 приложений
             в AppStore и Google Play
           </p>
@@ -69,7 +93,7 @@
         <div class="features-item">
           <img src="img/presentations.png" width="240" height="124" alt="Презентации" class="features-logo">
           <h2 class="features-name">Презентации</h2>
-          <p>
+          <p class="features-paragraph">
             Вы даже не подозреваете,
             насколько вы изумительны!
           </p>
@@ -83,11 +107,11 @@
             Мы-маленькая, но гордая
             дизайн-студия из Краснодара.
           </h1>
-          <p>
+          <p class="studio-paragraph">
             Исповедуем принципы минимализма и чистоты. Ставим математический<br>
             расчет выше креатива. Работаем не покладая рук, как роботы.
           </p>
-          <p>Выполняем заказы на разработку:</p>
+          <p class="studio-paragraph-up">Выполняем заказы на разработку:</p>
           <ul>
             <li>Веб-сайтов любой сложности</li>
             <li>Мобильных приложений для IOS и Android</li>
@@ -98,8 +122,8 @@
           <div class="logo">
             <img src="img/second-logo.png" width="240" height="119" alt="Студия Nerds">
           </div>
-          <p>Как мы работаем</p>
-          <ul>
+          <p class="studio-paragraph-up">Как мы работаем</p>
+          <ul class="studio-paragraph">
             <li>С самоотдачей 146%</li>
             <li>Соблюдая сроки на 100%</li>
             <li>По предоплате 50%</li>
@@ -124,13 +148,13 @@
         <!-- Не знаю как правильно вставить карту. Пока разметил как ссылку -->
         <div class="container clearfix">
           <section class="map-contacts">
-            <b>Nerds Design Studio</b>
-            <p>
+            <b class="map-contacts-header">Nёrds Design Studio</b>
+            <p class="map-contacts-paragraph">
               191186, Санкт-Петербург,<br>
               ул. Б. Конюшенная, д. 19/8
             </p>
-            <p>тел. +7 (812) 275-75-75</p>
-            <a href="#" class="btn">Напишите нам</a>
+            <p class="map-contacts-paragraph">тел. +7 (812) 275-75-75</p>
+            <a href="#" class="btn-contacts">Напишите нам</a>
           </section>
         </div>
       </div>
@@ -141,8 +165,8 @@
           <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
         </div>
         <div class="discont">
-            <p>Давайте дружить, это выгодно!</p>
-            <p>Скидка 10% для друзей из социальных сетей.</p>
+            <p class="discont-paragraph1">Давайте дружить, это выгодно!</p>
+            <p class="discont-paragraph2">Скидка 10% для друзей из социальных сетей.</p>
         </div>
       </div>
     </footer>
