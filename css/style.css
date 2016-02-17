@@ -150,17 +150,17 @@ h2 {
   width: 139px;
   height: 56px;
   float: left;
-  margin-right: 180px;
+  margin-right: 100px;
 }
 
 .main-navigation {
-  width: 400px;
+  width: 500px;
   float: left;
 }
 
 .main-navigation-list {
   margin: 0;
-  /*padding: 0;*/
+  padding: 0;
   list-style: none;
   font-size: 0;
 }
@@ -179,7 +179,17 @@ h2 {
   text-decoration: none;
   display: block;
   color: #000000;
+  padding: 20px 25px;
 
+}
+
+.main-navigation-list a:hover {
+  color: #fb565a;
+}
+
+.main-navigation-list a:active {
+  color: #000000;
+  opacity: 0.4;
 }
 
 
@@ -198,6 +208,7 @@ h2 {
   font-weight: 500;
   color: #000000;
   text-transform: uppercase;
+  padding: 20px 25px;
 }
 
 .features {
@@ -238,13 +249,15 @@ h2 {
 .btn {
   display: block;
   width: 139px;
-  height: 37px;
+  height: 15px;
   color: #ffffff;
   text-decoration: none;
   font-size: 12px;
   line-height: 18px;
   text-transform: uppercase;
   text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .btn-red {
@@ -318,8 +331,21 @@ border-radius: 3px;
 .portfolio-item {
   float: left;
   margin-right: 110px;
+  color: #231f20;
   opacity: 0.2;
+  /*background-color: red;*/
 }
+
+.portfolio-item:hover {
+  color: #231f20;
+  opacity: 1;
+}
+
+.portfolio-item:active {
+  color: #231f20;
+  opacity: 1;
+}
+
 
 .portfolio-item:last-child {
   margin-right: 0px;
@@ -335,7 +361,7 @@ border-radius: 3px;
   /*background: violet;*/
   /*opacity: 0.4;*/
   /*Временно*/
-  padding-top: 170px;
+  padding-top: 90px;
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
   width: 1199px;
@@ -348,10 +374,15 @@ border-radius: 3px;
   /*background: black;*/
   /*opacity: 0.9;*/
   /*Временно*/
-  width: 250px;
-  height: 240px;
+  width: 200px;
+  height: 210px;
   float: left;
   background-color: #ffffff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-align: left;
 }
 
 .map-contacts-header {
@@ -359,6 +390,7 @@ border-radius: 3px;
   line-height: 30px;
   text-transform: uppercase;
   color: #000000;
+
 }
 
 .map-contacts-paragraph {
@@ -370,7 +402,7 @@ border-radius: 3px;
 .btn-contacts {
   display: block;
   width: 204px;
-  height: 39px;
+  height: 15px;
   color: #ffffff;
   text-decoration: none;
   font-size: 12px;
@@ -380,7 +412,15 @@ border-radius: 3px;
   background-color: #fb565a;
   border: 1px solid #fb565a;
   border-radius: 3px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 
+}
+
+.map-point {
+  float: right;
+  width: 230px;
+  /*background-color: red;*/
 }
 
 .footer-about {
@@ -396,8 +436,48 @@ border-radius: 3px;
   /*Временно*/
   width: 300px;
   float: left;
-  /*padding-top: 77px;*/
-  /*padding-bottom: 77px;*/
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.social-btn {
+  display: inline-block;
+  width: 65px;
+  height: 65px;
+  background-color: #e1e1e1;
+  border-radius: 50%;
+  margin-right: 20px;
+  font-size: 0;
+}
+
+.social-btn:hover {
+  background-color: #fb565a;
+}
+
+.social-btn:last-child {
+  margin-right: 0px;
+}
+
+.social-btn:active {
+  background-color: #d6494d;
+}
+
+.social-btn-vk {
+  background-image: url("../img/icon-vk.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-btn-fb {
+  background-image: url("../img/icon-facebook.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-btn-inst {
+  background-image: url("../img/icon-instagramm.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .discont {
@@ -408,7 +488,7 @@ border-radius: 3px;
   width: 560px;
   float: right;
   /*padding-top: 77px;*/
-  /*padding-bottom: 77px;*/
+  margin-bottom: 77px;
 }
 
 .discont-paragraph1 {
@@ -421,6 +501,7 @@ border-radius: 3px;
   font-size: 16px;
   line-height: 22px;
   color: #283136;
+
 }
 
 /*catalog.html*/
