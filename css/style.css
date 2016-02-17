@@ -125,6 +125,7 @@ h2 {
 .main-header {
   /*height: 407px;*/
   background: #eeeeee;
+  padding-top: 20px;
   /*opacity: 0.5;*/
   /*Временно*/
 
@@ -150,7 +151,7 @@ h2 {
   width: 139px;
   height: 56px;
   float: left;
-  margin-right: 100px;
+  margin-right: 140px;
 }
 
 .main-navigation {
@@ -180,6 +181,7 @@ h2 {
   display: block;
   color: #000000;
   padding: 20px 25px;
+  padding-right: 30px;
 
 }
 
@@ -209,6 +211,20 @@ h2 {
   color: #000000;
   text-transform: uppercase;
   padding: 20px 25px;
+  padding-left: 35px;
+  /*background-color: red;*/
+  position: relative;
+}
+
+.cart a::before {
+  content: "";
+  position: absolute;
+  top: 23px;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  background: url("../img/icon-basket.png") no-repeat;
+  background-position: center;
 }
 
 .features {
