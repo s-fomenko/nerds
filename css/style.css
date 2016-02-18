@@ -1,14 +1,16 @@
 html, body {
   margin:0;
   padding:0;
+
 }
 body {
   font-size:16px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-weight: 500;
   font-style: normal;
   color: #000000;
   background:white;
+  min-width: 900px;
 }
 
 @font-face {
@@ -63,7 +65,7 @@ h2 {
   position:relative;
   width:880px;
   height:310px;
-  margin:0 auto;
+  margin-top: 16px;
 }
 .slider input[type=radio] {
   position:absolute;
@@ -72,10 +74,10 @@ h2 {
 .slider-controls {
   position:absolute;
   bottom:95px;
-  left:50%;
+  left:49%;
   width:200px;
   height:10px;
-  margin-left:-100px;
+  margin-left:-102px;
   text-align:center;
   z-index:1000;
 }
@@ -110,15 +112,17 @@ h2 {
 }
 .slide-title {
   font-size:36px;
-  line-height:1;
+  line-height:36px;
   /*font-weight:bold;*/
   color:black;
+  padding-bottom: 3px;
 }
+
 .slide .btn {
   display:block;
   width:240px;
   padding:10px 0;
-  margin-top:25px;
+  margin-top:32px;
   font-size:12px;
   color:white;
   text-transform:uppercase;
@@ -191,16 +195,17 @@ h2 {
   width: 139px;
   height: 56px;
   float: left;
-  margin-right: 140px;
+  margin-right: 139px;
 }
 
 .main-navigation {
   width: 500px;
   float: left;
+  text-align: right;
 }
 
 .main-navigation-list {
-  margin: 0;
+  margin: 18px 0;
   padding: 0;
   list-style: none;
   font-size: 0;
@@ -213,16 +218,15 @@ h2 {
   line-height: 30px;
   font-weight: 500;
   text-transform: uppercase;
-
 }
 
 .main-navigation-list a {
   text-decoration: none;
   display: block;
   color: #000000;
-  padding: 20px 25px;
-  padding-right: 30px;
-
+  padding: 9px;
+  margin-right: 32px;
+  /*background-color: red;*/
 }
 
 .main-navigation-list a:hover {
@@ -251,8 +255,9 @@ h2 {
   font-weight: 500;
   color: #000000;
   text-transform: uppercase;
-  padding: 20px 25px;
-  padding-left: 35px;
+  padding: 9px;
+  padding-left: 33px;
+  margin-top: 18px;
   /*background-color: red;*/
 
 }
@@ -260,7 +265,7 @@ h2 {
 .icon-basket::before {
   content: "\62";
   position: absolute;
-  top: 25px;
+  top: 33px;
   left: 0px;
   width: 20px;
   height: 20px;
@@ -288,15 +293,15 @@ h2 {
   /*background: red;*/
   /*opacity: 0.7;*/
   /*Временно*/
-  padding-top: 82px;
-  padding-bottom: 110px;
+  padding-top: 79px;
+  padding-bottom: 81px;
   border-bottom: 2px solid #eeeeee;
 }
 
 .features-item {
   width: 240px;
   float: left;
-  margin-right: 80px;
+  margin-right: 79px;
 }
 
 .features-item:last-child {
@@ -309,6 +314,7 @@ h2 {
   font-weight: 500;
   text-transform: uppercase;
   color: #000000;
+  padding-top: 4px;
 }
 
 .features-paragraph {
@@ -320,16 +326,17 @@ h2 {
 
 .btn {
   display: block;
-  width: 139px;
-  height: 15px;
+  width: 137px;
+  height: 20px;
   color: #ffffff;
   text-decoration: none;
   font-size: 12px;
   line-height: 18px;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 8px;
+  padding-bottom: 6px;
+  margin-top: 26px;
 }
 
 .btn-red {
@@ -388,8 +395,8 @@ border-radius: 3px;
   /*background: violet;*/
   /*opacity: 0.4;*/
   /*Временно*/
-  padding-top: 60px;
-  padding-bottom: 150px;
+  padding-top: 46px;
+  padding-bottom: 55px;
   border-bottom: 2px solid #eeeeee;
 }
 
@@ -397,23 +404,32 @@ border-radius: 3px;
   width: 620px;
   float: left;
   margin-right: 20px;
+  /*margin-top: -10px;*/
+  /*background-color: red;*/
+  /*background-color: green;*/
 }
 
 .about-right {
   width: 240px;
   float: left;
+  /*background-color: red;*/
+  margin-top: 13px;
 }
 
 .studio {
   font-size: 36px;
   line-height: 36px;
   width: 525px;
+
 }
 
 .studio-paragraph {
   font-size: 16px;
   line-height: 22px;
   color: #283136;
+  /*margin-top: -6px;*/
+  /*word-spacing: 1px;*/
+  padding-bottom: 22px;
 }
 
 .studio-paragraph-up {
@@ -423,19 +439,58 @@ border-radius: 3px;
   text-transform: uppercase;
 }
 
+.studio-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  /*background-color: green;*/
+}
+
+.studio-list-item {
+  font-size: 16px;
+  line-height: 22px;
+  padding-top: 5px;
+  padding-left: 34px;
+  margin-bottom: 17px;
+  position: relative;
+}
+
+.studio-list-item::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 2px;
+  left: -2px;
+  top: 16px;
+  background-color: #fb565a;
+}
+
+.logo {
+  /*background-color: red;*/
+  margin-bottom: 65px;
+}
+
 .portfolio {
   /*min-height: 112px;*/
   /*background: red;*/
   /*opacity: 0.4;*/
   /*Временно*/
-  padding-top: 58px;
-  padding-bottom: 20px;
+  padding-top: 42px;
+  padding-bottom: 36px;
+  padding-left: 35px;
+  padding-right: 12px;
   border-bottom: 2px solid #eeeeee;
+  font-size: 0;
+  margin-bottom: 86px;
 }
 
 .portfolio-item {
-  float: left;
-  margin-right: 110px;
+  display: inline-block;
+  vertical-align: middle;
+  /*width: 33.33%;*/
+  /*float: left;*/
+  margin-right: 118px;
   color: #231f20;
   opacity: 0.2;
   /*background-color: red;*/
@@ -462,16 +517,18 @@ border-radius: 3px;
 }
 
 .map {
-  min-height: 330px;
+  /*min-height: 330px;*/
   /*background: violet;*/
   /*opacity: 0.4;*/
   /*Временно*/
   padding-top: 90px;
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
-  width: 1199px;
-  height: 416px;
-  margin: 0 auto;
+  background-size: cover;
+  /*width: 1199px;*/
+  height: 326px;
+  /*margin: 0 auto;*/
+  /*margin-bottom: 40px;*/
 }
 
 .map-contacts {
@@ -479,22 +536,24 @@ border-radius: 3px;
   /*background: black;*/
   /*opacity: 0.9;*/
   /*Временно*/
-  width: 200px;
-  height: 210px;
+  width: 202px;
+  height: 215px;
   float: left;
   background-color: #ffffff;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 25px;
+  padding-top: 23px;
+  /*padding-bottom: 20px;*/
+  padding-left: 20px;
   padding-right: 25px;
   text-align: left;
 }
 
 .map-contacts-header {
+  /*display: block;*/
   font-size: 16px;
-  line-height: 30px;
+  line-height: 28px;
   text-transform: uppercase;
   color: #000000;
+  /*padding-top: 23px;*/
 
 }
 
@@ -502,6 +561,7 @@ border-radius: 3px;
   font-size: 16px;
   line-height: 20px;
   color: #666666;
+  display: block;
 }
 
 .btn-contacts {
@@ -517,22 +577,24 @@ border-radius: 3px;
   background-color: #fb565a;
   border: 1px solid #fb565a;
   border-radius: 3px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 31px;
 }
 
 .map-point {
   float: right;
   width: 230px;
   /*background-color: red;*/
+  margin-top: 22px;
+  margin-left: 200px;
 }
 
-.footer-about {
-  /*background: blue;*/
+/*.footer-about {
+  background: blue;
   padding-top: 77px;
   padding-bottom: 77px;
-}
+}*/
 
 .footer-social {
   /*min-height: 216px;*/
@@ -543,6 +605,7 @@ border-radius: 3px;
   float: left;
   padding-top: 30px;
   padding-bottom: 30px;
+  margin-top: 30px;
 }
 
 .social-btn {
@@ -593,16 +656,22 @@ border-radius: 3px;
   width: 560px;
   float: right;
   /*padding-top: 77px;*/
-  margin-bottom: 77px;
+  margin-top: 39px;
 }
 
 .discont-paragraph1 {
+  padding: 0;
+  margin: 0;
   font-size: 36px;
   line-height: 36px;
+  padding-top: 37px;
+  padding-bottom: 9px;
   color: #000000;
 }
 
 .discont-paragraph2 {
+  padding: 0;
+  margin: 0;
   font-size: 16px;
   line-height: 22px;
   color: #283136;
