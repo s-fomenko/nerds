@@ -25,7 +25,7 @@
                 <a href="#">Клиенты</a>
               </li>
               <li>
-                <a href="#">Магазин</a>
+                <a class="active-link" href="#">Магазин</a>
               </li>
               <li>
                 <a href="#">Контакты</a>
@@ -49,7 +49,19 @@
           <form class="features-select" action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="features-select">
               <legend>Стоимость:</legend>
-              <!-- Здесь будет контроллер -->
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                  <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                </div>
+              </div>
             </fieldset>
             <fieldset class="features-select">
               <legend>Сетка:</legend>
@@ -93,30 +105,30 @@
           </form>
         </div>
         <div class="shop clearfix">
-          <div class="sort">
+          <div class="sort clearfix">
             <div class="sort-list-1">
-              <ul class="main-navigation-list">
+              <ul class="second-navigation-list">
                 <li>
-                  <span>Сортировать:</span>
+                  <span class="span-sort">Сортировать:</span>
                 </li>
                 <li>
-                  <a href="#" class="btn">По цене</a>
+                  <a href="#" class="btn-sort">По цене</a>
                 </li>
                 <li>
-                  <a href="#" class="btn">По типу</a>
+                  <a href="#" class="btn-sort">По типу</a>
                 </li>
                 <li>
-                  <a href="#" class="btn">По функционалу</a>
+                  <a href="#" class="btn-sort">По функционалу</a>
                 </li>
               </ul>
             </div>
             <div class="sort-list-2">
-              <ul class="main-navigation-list">
+              <ul class="second-navigation-list">
                 <li>
-                  <a href="#" class="btn">1</a>
+                  <a href="#" class="btn-sort icon-down-dir"></a>
                 </li>
                 <li>
-                  <a href="#" class="btn">2</a>
+                  <a href="#" class="btn-sort icon-up-dir"></a>
                 </li>
               </ul>
             </div>
@@ -141,10 +153,10 @@
               <img src="img/dovetail.jpg" width="240" height="240" alt="dovetail">
             </article>
             <div class="pages">
-              <a class="active" href="#">1</a>
-              <a href="#">2</a>
-              <a href="#">3</a>
-              <a href="#">Следующая</a>
+              <a class="pages-btn active" href="#">1</a>
+              <a class="pages-btn" href="#">2</a>
+              <a class="pages-btn" href="#">3</a>
+              <a class="pages-btn" href="#">Следующая</a>
             </div>
           </div>
         </div>
@@ -163,7 +175,7 @@
             <p class="map-contacts-paragraph">тел. +7 (812) 275-75-75</p>
             <a href="#" class="btn-contacts">Напишите нам</a>
           </section>
-          <img src="img/map-point.png" alt="" class="map-point">
+          <!-- <img src="img/map-point.png" alt="" class="map-point"> -->
         </div>
       </div>
       <div class="container clearfix">
