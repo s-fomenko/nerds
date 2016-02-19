@@ -851,6 +851,7 @@ input[type="radio"] {
   text-decoration: none;
   font-size: 12px;
   line-height: 18px;
+  color: #000000;
   opacity: 0.3;
   text-transform: uppercase;
 }
@@ -870,6 +871,7 @@ input[type="radio"] {
 .icon-down-dir {
 
   color: #00ca74;
+  opacity: 1;
 }
 
 
@@ -895,6 +897,22 @@ input[type="radio"] {
   margin-right: 80px;
   margin-bottom: 103px;
   position: relative;
+}
+
+.catalog-item::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 240px;
+  height: 30px;
+  /*left: -2px;*/
+  top: -30px;
+  background-image: url("../img/browser-dark.png");
+  opacity: 0.1;
+}
+
+.catalog-item:hover::before {
+  opacity: 1;
 }
 
 
