@@ -10,7 +10,7 @@
   <body>
     <header class="main-header">
       <div class="container clearfix">
-        <div class="header-block">
+        <div class="header-block clearfix">
           <div class="main-logo">
             <a href="index.html">
               <img src="img/main-logo.png" width="139" height="56" alt="Студия Nerds">
@@ -47,7 +47,7 @@
       <div class="choose container clearfix">
         <div class="menu">
           <form class="features-select" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset class="features-select">
+            <fieldset class="features-select1">
               <legend>Стоимость:</legend>
               <div class="range-filter">
                 <div class="range-controls">
@@ -58,12 +58,12 @@
                   <div class="toggle toggle-max"></div>
                 </div>
                 <div class="price-controls">
-                  <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-                  <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                  <label class="min-price">ОТ<input name="min-price" type="text" value="0"></label>
+                  <label class="max-price">ДО<input name="max-price" type="text" value="15000"></label>
                 </div>
               </div>
             </fieldset>
-            <fieldset class="features-select">
+            <fieldset class="features-select2">
               <legend>Сетка:</legend>
               <div class="features-select-item">
                 <input id="adaptive" type="radio" name="type" value="adaptive" checked>
@@ -78,7 +78,7 @@
                 <label for="rubber">Резиновая</label>
               </div>
             </fieldset>
-            <fieldset class="features-select">
+            <fieldset class="features-select3">
               <legend>Особенности:</legend>
               <div class="features-select-item">
                 <input id="slider" type="checkbox" name="features" value="slider" checked>
@@ -123,14 +123,16 @@
               </ul>
             </div>
             <div class="sort-list-2">
-              <ul class="second-navigation-list">
+              <a href="#"><span class="icon-down-dir"></span></a>
+              <a href="#"><span class="icon-up-dir"></span></a>
+              <!-- <ul class="second-navigation-list">
                 <li>
                   <a href="#" class="btn-sort icon-down-dir"></a>
                 </li>
                 <li>
                   <a href="#" class="btn-sort icon-up-dir"></a>
                 </li>
-              </ul>
+              </ul> -->
             </div>
           </div>
           <div class="catalog clearfix">
@@ -153,7 +155,7 @@
               <img src="img/dovetail.jpg" width="240" height="240" alt="dovetail">
             </article>
             <div class="pages">
-              <a class="pages-btn active" href="#">1</a>
+              <span class="pages-btn active">1</span>
               <a class="pages-btn" href="#">2</a>
               <a class="pages-btn" href="#">3</a>
               <a class="pages-btn" href="#">Следующая</a>
