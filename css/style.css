@@ -138,12 +138,10 @@ h2 {
 
 .slide .btn:hover {
   background-color: #d6494d;
-  border: 1px solid #d6494d;
 }
 
 .slide .btn:active {
   background-color: #b63538;
-  border: 1px solid #b63538;
   box-shadow: inset 0 3px 0 0 #9b2d30;
 }
 
@@ -261,6 +259,10 @@ h2 {
   background-color: #fb565a;
 }
 
+a.disabled {
+  pointer-events: none;
+  cursor: default;
+}
 .cart {
   width: 100px;
   float: right;
@@ -669,14 +671,14 @@ border-radius: 3px;
 }
 
 .choose {
-  padding-top: 45px;
+  padding-top: 74px;
 }
 
 .menu {
   width: 240px;
   float: left;
   margin-right: 80px;
-  margin-top: 28px;
+  /*margin-top: 28px;*/
 }
 
 .features-select1 {
@@ -746,6 +748,10 @@ input[type="radio"]:checked + label::before {
   content: "\25cf";
 }
 
+input[type="radio"]:disabled + label {
+  opacity: 0.4;
+}
+
 input[type="checkbox"] {
   display: none;
 }
@@ -781,8 +787,11 @@ input[type="checkbox"]:checked + label::before {
   content: "\2611";
 }
 
+input[type="checkbox"]:disabled + label {
+  opacity: 0.4;
+}
+
 .form-btn {
-  /*margin-top: 60px;*/
   background-color: #f1f1f1;
   width: 155px;
   height: 38px;
@@ -794,6 +803,7 @@ input[type="checkbox"]:checked + label::before {
   border-radius: 3px;
   margin-top: 26px;
   padding-left: 9px;
+  outline: none;
 }
 
 .form-btn:hover {
@@ -810,7 +820,6 @@ input[type="checkbox"]:checked + label::before {
 .shop {
   width: 560px;
   float: left;
-  padding-top: 15px;
 }
 
 .sort {
@@ -819,6 +828,7 @@ input[type="checkbox"]:checked + label::before {
 
 .second-navigation-list {
   padding-left: 0;
+  margin-top: 0;
 }
 
 .second-navigation-list li {
@@ -872,14 +882,28 @@ input[type="checkbox"]:checked + label::before {
   position: relative;
 }
 
-.icon-down-dir {
-  position: absolute;
-  top: -37px;
-  left: 42px;
+.icon-down-dir, .icon-up-dir {
+  width: 10px;
+  display: inline-block;
+  text-decoration: none;
   font-family: "symbols-nerds";
   font-size: 23px;
   line-height: 20px;
   color: #00ca74;
+}
+
+.icon-down-dir::before {
+  width: 0;
+  margin-left: 0;
+}
+
+.icon-up-dir::before {
+  width: 0;
+  margin-left: 0;
+}
+
+.icon-down-dir {
+  margin-left: 54px;
 }
 
 .icon-down-dir:hover {
@@ -891,12 +915,6 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .icon-up-dir {
-  position: absolute;
-  top: -37px;
-  left: 59px;
-  font-family: "symbols-nerds";
-  font-size: 23px;
-  line-height: 20px;
   color: #c1c1c1;
 }
 
@@ -1136,4 +1154,142 @@ main {
   border-radius: 5px;
   outline: none;
   background: #f1f1f1;
+}
+
+/*=====Всплывающее окно=====*/
+
+.modal-window {
+  background-color: #ffffff;
+  bottom: 198px;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+  height: 311px;
+  left: 50%;
+  margin-left: -325px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+  padding-right: 90px;
+  padding-top: 55px;
+  position: absolute;
+  width: 460px;
+  display: none;
+}
+
+.modal-window-close {
+  background-color: #fb565a;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 0;
+  height: 41px;
+  outline: 0;
+  position: absolute;
+  right: 6px;
+  top: 6px;
+  width: 41px;
+}
+
+.modal-window-close:hover {
+  background-color: #d6494d;
+}
+
+.modal-window-close:active {
+  background-color: #b63538;
+}
+
+.modal-window-close::before,
+.modal-window-close::after {
+  background-color: #ffffff;
+  content: "";
+  height: 5px;
+  position: absolute;
+  right: 7px;
+  top: 18px;
+  width: 26px;
+}
+
+.modal-window-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-window-close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-text {
+  margin-bottom: 20px;
+  width: 460px;
+}
+
+.modal-text-name {
+  float: left;
+  width: 220px;
+}
+
+.modal-text-e-mail {
+  float: right;
+  width: 220px;
+}
+
+.modal-form textarea {
+  height: 100px;
+  margin-bottom: 41px;
+  padding-top: 9px;
+  width: 440px;
+}
+
+.modal-form label {
+  display: block;
+  font-size: 16px;
+  line-height: 18px;
+  margin-bottom: 9px;
+}
+
+.btn-modal {
+  display:block;
+  width: 100%;
+  padding:10px 0;
+  margin-top:27px;
+  font-size:12px;
+  color:white;
+  text-transform:uppercase;
+  text-align:center;
+  text-decoration:none;
+  background:#fb565a;
+  border: 1px solid #fb565a;
+  border-radius:3px;
+  outline: none;
+}
+
+.btn-modal:hover {
+  background-color: #d6494d;
+}
+
+.btn-modal:active {
+  background-color: #b63538;
+  box-shadow: inset 0 3px 0 0 #9b2d30;
+}
+
+.modal-form input[type="text"],
+.modal-form textarea {
+  border: 2px solid #d7dcde;
+  border-radius: 2px;
+  font-size: 12px;
+  line-height: 18px;
+  padding-left: 14px;
+  text-transform: uppercase;
+}
+
+.modal-form input[type="text"]:hover,
+.modal-form textarea:hover {
+  border-color: #a2a9ac;
+}
+
+.modal-form input[type="text"]:focus,
+.modal-form textarea:focus {
+  border-color: #56bffb;
+}
+
+.modal-form input[type="text"] {
+  height: 32px;
+  width: 201px;
 }

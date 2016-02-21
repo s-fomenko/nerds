@@ -19,7 +19,7 @@
               <a href="#">Студия</a>
             </li>
             <li>
-              <a class="link1" href="#">Клиенты</a>
+              <a href="#">Клиенты</a>
             </li>
             <li>
               <a href="./catalog.html">Магазин</a>
@@ -37,39 +37,40 @@
       </div>
       <div class="container">
         <div class="slider">
-        <input type="radio" id="btn-1" name="toggle" checked>
-        <input type="radio" id="btn-2" name="toggle">
-        <input type="radio" id="btn-3" name="toggle">
-        <div class="slider-controls">
-          <label for="btn-1"></label>
-          <label for="btn-2"></label>
-          <label for="btn-3"></label>
+          <input type="radio" id="btn-1" name="toggle" checked>
+          <input type="radio" id="btn-2" name="toggle">
+          <input type="radio" id="btn-3" name="toggle">
+          <div class="slider-controls">
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+            <label for="btn-3"></label>
+          </div>
+          <div class="slides">
+            <div class="slide">
+              <div class="slide-text">
+                <div class="slide-title">Долго, дорого, скрупулезно
+                </div>
+                <p class="slide-paragraph">Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
+                <a class="btn" href="#">Узнать больше</a>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide-text">
+                <div class="slide-title">Любите ли вы математику, как любим ее мы?</div>
+                <p class="slide-paragraph">Нашим дизайнерам мы удаляем нейроны, ответственные<br> за креатив, чтобы дать им возможность все просчитать</p>
+                <a class="btn" href="#">Узнать больше</a>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide-text">
+                <div class="slide-title">Только наркотики,<br>только хардкор!</div>
+                <p class="slide-paragraph">Все дизайнерские решения в нашей компании принимаются<br>
+    только под воздействием качественных галлюциногенов</p>
+                <a class="btn" href="#">Узнать больше</a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="slides">
-          <div class="slide">
-            <div class="slide-text">
-              <div class="slide-title">Долго, дорого, скрупулезно</div>
-              <p class="slide-paragraph">Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
-              <a class="btn" href="#">Узнать больше</a>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="slide-text">
-              <div class="slide-title">Любите ли вы математику, как любим ее мы?</div>
-              <p class="slide-paragraph">Нашим дизайнерам мы удаляем нейроны, ответственные<br> за креатив, чтобы дать им возможность все просчитать</p>
-              <a class="btn" href="#">Узнать больше</a>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="slide-text">
-              <div class="slide-title">Только наркотики,<br>только хардкор!</div>
-              <p class="slide-paragraph">Все дизайнерские решения в нашей компании принимаются<br>
-  только под воздействием качественных галлюциногенов</p>
-              <a class="btn" href="#">Узнать больше</a>
-            </div>
-          </div>
-        </div>
-      </div>
       </div>
     </header>
     <main class="index-main">
@@ -170,5 +171,23 @@
         </div>
       </div>
     </footer>
+    <div class="modal-window">
+      <button class="modal-window-close" type="button" title="Закрыть"></button>
+      <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="modal-text clearfix">
+          <div class="modal-text-name">
+            <label for="name">Ваше имя:</label>
+            <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+          </div>
+          <div class="modal-text-e-mail">
+            <label for="e-mail">Ваш e-mail:</label>
+            <input type="text" name="e-mail" id="e-mail" placeholder="Для отправки ответа">
+          </div>
+        </div>
+        <label for="feedback">Текст письма:</label>
+        <textarea name="feedback" id="feedback" placeholder="В свободной форме"></textarea>
+        <button class="btn-modal" type="submit">Отправить</button>
+      </form>
+    </div>
   </body>
 </html>
