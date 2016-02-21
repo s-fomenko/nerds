@@ -972,6 +972,17 @@ input[type="checkbox"]:checked + label::before {
   color: #000000;
   opacity: 0.3;
   text-transform: uppercase;
+  border-bottom: 1px dotted #00ca74;
+}
+
+.btn-sort:hover {
+  opacity: 1;
+  border-bottom: 1px solid #00ca74;
+}
+
+.btn-sort:active {
+  opacity: 1;
+  border-bottom: 0;
 }
 
 .span-sort {
@@ -1021,6 +1032,14 @@ input[type="checkbox"]:checked + label::before {
   color: #00ca74;
 }
 
+.icon-down-dir:hover {
+  color: #c1c1c1;
+}
+
+.icon-down-dir:active {
+  color: #000000;
+}
+
 .icon-up-dir {
   position: absolute;
   top: -37px;
@@ -1029,6 +1048,14 @@ input[type="checkbox"]:checked + label::before {
   font-size: 23px;
   line-height: 20px;
   color: #c1c1c1;
+}
+
+.icon-up-dir:hover {
+  color: #c1c1c1;
+}
+
+.icon-up-dir:active {
+  color: #000000;
 }
 
 .catalog-item {
@@ -1105,6 +1132,17 @@ input[type="checkbox"]:checked + label::before {
   background-color: #ffffff;
   border: 1px solid #f1f1f1;
   border-radius: 3px;
+}
+
+.pages-btn:hover:nth-child(n+2) {
+  background-color: #e5e5e5;
+  border: 1px solid #e5e5e5;
+}
+
+.pages-btn:active:nth-child(n+2) {
+  background-color: #d5d5d5;
+  border: 1px solid #d5d5d5;
+  box-shadow: inset 0 3px 0 0 #b5b5b5;
 }
 
 main {
