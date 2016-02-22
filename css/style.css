@@ -1161,7 +1161,7 @@ main {
 .modal-window {
   background-color: #ffffff;
   bottom: 198px;
-  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
   height: 311px;
   left: 50%;
   margin-left: -325px;
