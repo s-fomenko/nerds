@@ -1235,6 +1235,7 @@ main {
   margin-bottom: 41px;
   padding-top: 9px;
   width: 440px;
+  resize: none;
 }
 
 .modal-form label {
@@ -1248,7 +1249,6 @@ main {
   display:block;
   width: 100%;
   padding:10px 0;
-  margin-top:27px;
   font-size:12px;
   color:white;
   text-transform:uppercase;
@@ -1275,7 +1275,8 @@ main {
   border-radius: 2px;
   font-size: 12px;
   line-height: 18px;
-  padding-left: 14px;
+  padding-left: 7px;
+  padding-right: 7px;
   text-transform: uppercase;
 }
 
