@@ -1160,7 +1160,7 @@ main {
 
 .modal-window {
   background-color: #ffffff;
-  bottom: 198px;
+  top: 1583px;
   box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
   height: 311px;
   left: 50%;
@@ -1172,6 +1172,10 @@ main {
   position: absolute;
   width: 460px;
   display: none;
+}
+
+.modal-window-show {
+  display: block;
 }
 
 .modal-window-close {
