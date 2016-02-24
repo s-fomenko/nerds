@@ -58,7 +58,7 @@ h2 {
 .slider {
   position:relative;
   width:880px;
-  height:310px;
+  min-height:310px;
   margin-top: 33px;
 }
 
@@ -97,7 +97,6 @@ h2 {
 }
 
 .slide {
-  position:absolute;
   top:0;
   left:0;
   width:100%;
@@ -207,6 +206,11 @@ h2 {
   height: 56px;
   float: left;
   margin-right: 102px;
+}
+
+.main-logo img {
+  width: 139px;
+  height: 56px;
 }
 
 .main-navigation {
@@ -505,12 +509,18 @@ border-radius: 3px;
 }
 
 .map {
-  padding-top: 90px;
   background-color: #e9e5dc;
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  height: 326px;
+  position: relative;
+  font-size: 0;
+}
+
+.map iframe {
+  width: 100%;
+  height: 416px;
+  border: 0;
 }
 
 .map-contacts {
@@ -521,6 +531,11 @@ border-radius: 3px;
   padding-left: 20px;
   padding-right: 25px;
   text-align: left;
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  -webkit-transform: translateX(-440px);
+          transform: translateX(-440px);
 }
 
 .map-contacts-header {
@@ -678,7 +693,6 @@ border-radius: 3px;
   width: 240px;
   float: left;
   margin-right: 80px;
-  /*margin-top: 28px;*/
 }
 
 .features-select1 {
@@ -1158,6 +1172,44 @@ main {
 
 /*=====Всплывающее окно=====*/
 
+@-webkit-keyframes bounce {
+  0%   {
+    -webkit-transform: translateX(-2000px);
+            transform: translateX(-2000px);
+  }
+  70%  {
+    -webkit-transform: translateX(30px);
+            transform: translateX(30px);
+  }
+  90%  {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes bounce {
+  0%   {
+    -webkit-transform: translateX(-2000px);
+            transform: translateX(-2000px);
+  }
+  70%  {
+    -webkit-transform: translateX(30px);
+            transform: translateX(30px);
+  }
+  90%  {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
 .modal-window {
   background-color: #ffffff;
   top: 1583px;
@@ -1176,6 +1228,8 @@ main {
 
 .modal-window-show {
   display: block;
+  -webkit-animation: bounce 0.6s;
+          animation: bounce 0.6s;
 }
 
 .modal-window-close {
@@ -1212,10 +1266,12 @@ main {
 }
 
 .modal-window-close::before {
+  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
 .modal-window-close::after {
+  -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
