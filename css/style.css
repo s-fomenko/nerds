@@ -63,7 +63,7 @@ h2 {
   margin-top: 33px;
 }
 
-.slider input[type=radio] {
+.slider input[type="radio"] {
   position:absolute;
   opacity:0;
 }
@@ -1178,7 +1178,7 @@ main {
 }
 
 .price-controls input {
-  font-family: 'Roboto', 'Arial', sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   width: 60px;
   margin-left: 10px;
