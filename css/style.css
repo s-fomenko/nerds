@@ -23,6 +23,7 @@ body {
 [class^="icon-"]::before,
 [class*=" icon-"]::before {
   display: inline-block;
+  vertical-align: top;
   width: 1em;
   margin-right: 0.2em;
   margin-left: 0.2em;
@@ -80,12 +81,12 @@ h2 {
 
 .slider-controls label {
   display:inline-block;
+  vertical-align:top;
   width:4px;
   height:4px;
   margin:0 3px;
   background:white;
   border:3px solid white;
-  vertical-align:top;
   border-radius:50%;
   cursor:pointer;
 }
@@ -145,18 +146,21 @@ h2 {
 }
 
 .slide:nth-child(1) {
+  background-color: #eeeeee;
   background-image:url("../img/slider-1.png");
   background-repeat:no-repeat;
   background-position:100% 10px;
 }
 
 .slide:nth-child(2) {
+  background-color: #eeeeee;
   background-image:url("../img/slider-2.png");
   background-repeat:no-repeat;
   background-position:100% 10px;
 }
 
 .slide:nth-child(3) {
+  background-color: #eeeeee;
   background-image:url("../img/slider-3.png");
   background-repeat:no-repeat;
   background-position:100% 0;
@@ -287,16 +291,6 @@ a.disabled {
   margin-top: 18px;
 }
 
-.icon-basket::before {
-  content: "\62";
-  position: absolute;
-  top: 33px;
-  left: 0px;
-  width: 20px;
-  height: 20px;
-  opacity: 0.3;
-}
-
 .cart a:hover {
   color: #fb565a;
 }
@@ -304,6 +298,24 @@ a.disabled {
 .cart a:active {
   color: #000000;
   opacity: 0.4;
+}
+
+.icon-basket::before {
+  content: "\62";
+  position: absolute;
+  top: 33px;
+  left: 1px;
+  width: 20px;
+  height: 20px;
+  opacity: 0.3;
+}
+
+.icon-basket:hover::before {
+  opacity: 1;
+}
+
+.icon-basket:active::before {
+  opacity: 0.15;
 }
 
 .features {
@@ -488,10 +500,10 @@ border-radius: 3px;
 
 .portfolio-item {
   display: inline-block;
+  vertical-align: middle;
   margin-right: 110px;
   opacity: 0.2;
   padding-left: 12px;
-  vertical-align: middle;
 }
 
 .portfolio-item:hover {
@@ -603,6 +615,7 @@ border-radius: 3px;
 
 .social-btn {
   display: inline-block;
+  vertical-align: top;
   width: 63px;
   height: 63px;
   background-color: #e1e1e1;
@@ -626,18 +639,21 @@ border-radius: 3px;
 }
 
 .social-btn-vk {
+  background-color: #e1e1e1;
   background-image: url("../img/icon-vk.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .social-btn-fb {
+  background-color: #e1e1e1;
   background-image: url("../img/icon-facebook.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .social-btn-inst {
+  background-color: #e1e1e1;
   background-image: url("../img/icon-instagramm.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -848,6 +864,7 @@ input[type="checkbox"]:disabled + label {
 .second-navigation-list li {
   list-style: none;
   display: inline-block;
+  vertical-align: top;
   margin: 0;
   padding: 0;
 
@@ -899,6 +916,7 @@ input[type="checkbox"]:disabled + label {
 .icon-down-dir, .icon-up-dir {
   width: 10px;
   display: inline-block;
+  vertical-align: top;
   text-decoration: none;
   font-family: "symbols-nerds";
   font-size: 23px;
@@ -955,6 +973,7 @@ input[type="checkbox"]:disabled + label {
   width: 240px;
   height: 30px;
   top: -30px;
+  background-color: #f1f1f1;
   background-image: url("../img/browser-dark.png");
   opacity: 0.1;
 }
@@ -1052,6 +1071,7 @@ input[type="checkbox"]:disabled + label {
 
 .pages-btn {
   display: inline-block;
+  vertical-align: top;
   width: 35px;
   height: 19px;
   background-color: #f1f1f1;
@@ -1149,6 +1169,7 @@ main {
 .price-controls label {
   font-size: 16px;
   display: inline-block;
+  vertical-align: top;
   width: 50%;
 }
 
